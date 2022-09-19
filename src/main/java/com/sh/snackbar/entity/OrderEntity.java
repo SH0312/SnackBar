@@ -24,7 +24,7 @@ public class OrderEntity {
 
     /** 사용자 join */
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "order_id")
     private UserEntity userEntity;
 
 }

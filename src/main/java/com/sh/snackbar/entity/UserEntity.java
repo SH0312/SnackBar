@@ -5,6 +5,7 @@ import com.sh.snackbar.utils.Role;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -35,6 +36,6 @@ public class UserEntity {
 
     /** 주문 목록과 join */
     @OneToMany(mappedBy = "userEntity")
-    private List<OrderEntity> orderEntity;
+    private List<OrderEntity> orderEntity = new ArrayList<>();
 
 }
